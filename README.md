@@ -1,6 +1,8 @@
 # ivol-parser
 IVolatility chart parser
 
+http://www.anamuser.com/2016/12/04/parsing-data-from-ivolatility-charts/
+
 ## Examples
 
 Auto axis parsing
@@ -11,7 +13,7 @@ iVolChart.parseAxises();
 LinkedHashMap<LocalDate, Double> values = iVolChart.parseData(IVolLineType.IMPLIED_VOLATILITY);
 ```
 
-Or manually providing values
+Or manually providing values for axis coordinates
 
 ```java
 IVolChart iVolChart = new IVolChart(new FileInputStream(CHART_FILE));
